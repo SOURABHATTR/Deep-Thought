@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Project Management - Deep Thought</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center space-x-3">
+                <!-- Logo -->
+                <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Deep Thought Logo"
+                    class="h-10">
+                <span class="text-blue-700 font-bold text-xl">DEEP <span class="text-blue-500">THOUGHT</span></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <!-- Icons for Home, Tasks, Notifications, and Profile -->
+                <button class="text-blue-600 hover:text-blue-800">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button class="text-blue-600 hover:text-blue-800">
+                    <i class="fas fa-tasks"></i>
+                </button>
+                <button class="text-blue-600 hover:text-blue-800">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <img src="user.svg" alt="Profile" class="h-10 w-10 rounded-full">
+                <!-- Three Dots Icon -->
+                <button class="text-gray-800 hover:text-gray-800">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar with Toggle -->
+    <div class="relative">
+        
+
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="fixed top-16 left-0 w-64 bg-gray-900 text-white h-full transform -translate-x-3/4 transition-transform duration-300 z-20">
+            <div class="p-4 flex justify-between items-center">
+                <span class="font-bold">Journey Board </span>
+                <button id="toggleArrow" class="bg-white text-gray-900 p-1 rounded">
+                    <i class="fas fa-arrow-right"></i> <!-- Start with right arrow -->
+                </button>
+            </div>
+            <div class="bg-white h-full p-4">
+                <div class="w-full h-2/3 bg-gray-200 rounded-md">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-blue-700 mb-4">Technical Project Management</h1>
+
+        <!-- Subtitle and Description -->
+        <section class="mb-6">
+            <h2 class="text-lg font-semibold">Explore the world of management</h2>
+            <p class="text-gray-600">
+                As a project manager, you play an important role in leading a project through initiation, planning,
+                execution, monitoring, controlling, and completion. How? Do you want to manage each and every step of your
+                life?
+            </p>
+        </section>
+
+        <!-- Cards Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Video Section -->
+            <div class="bg-black rounded-lg overflow-hidden">
+                <div class="bg-gray-900 text-white p-3 flex justify-between">
+                    <span class="font-bold">Technical Project Management</span>
+                    <span class="cursor-pointer">i</span>
+                </div>
+                <div class="p-3">
+                    <p class="text-white mb-4">
+                        Story of Aligned Scope of Agility Specific Accountable Steering Approach
+                    </p>
+                    <iframe class="w-full rounded-md" height="200" src="https://www.youtube.com/embed/VIDEO_ID"
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Threadbuild Section -->
+            <div class="bg-white border rounded-lg overflow-hidden">
+                <div class="bg-gray-900 text-white p-3 flex justify-between">
+                    <span class="font-bold">Threadbuild</span>
+                    <span class="cursor-pointer">i</span>
+                </div>
+                <div class="p-3">
+                    <p class="mb-4">
+                        Watch the video and threadbuild, jot out key threads while watching the video.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="border p-3 rounded-lg">
+                            <label for="sub-thread" class="block text-gray-600 mb-1">Sub thread 1</label>
+                            <input type="text" id="sub-thread" class="w-full border border-gray-300 rounded-md p-2"
+                                placeholder="Enter text here">
+                        </div>
+                        <div class="border p-3 rounded-lg">
+                            <label for="sub-interpretation" class="block text-gray-600 mb-1">Sub Interpretation 1</label>
+                            <input type="text" id="sub-interpretation"
+                                class="w-full border border-gray-300 rounded-md p-2" placeholder="Enter text here">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Structure Your Patience Section -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <div class="bg-gray-900 border rounded-lg text-white p-3 flex justify-between">
+                    <span class="font-bold">Structure your Patience</span>
+                    <span class="cursor-pointer">i</span>
+                </div>               
+                
+                <p class="text-gray-700">Write a 600-800 word article, then post the thread.</p>
+                <div class="mt-4">
+                    <input type="text" class="border border-gray-300 w-full p-2 rounded-md mb-2" placeholder="Title">
+                    <textarea class="border border-gray-300 w-full p-2 rounded-md mb-2" rows="4"
+                        placeholder="Content"></textarea>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Post</button>
+                </div>
+            </div>
+
+            <!-- Q&A Section -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <div class="bg-gray-900 border rounded-lg text-white p-3 flex justify-between">
+                    <span class="font-bold">4SA Method</span>
+                    <span class="cursor-pointer">i</span>
+                </div>            
+                <p class="text-gray-700">How to bring an idea into practice?</p>
+                <div class="mt-4">
+                    <p>Example: You have a concept, how will you put it into practice?</p>
+                    <textarea class="border border-gray-300 w-full p-2 rounded-md mb-2" rows="4"
+                        placeholder="Your answer"></textarea>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="flex flex-col fixed right-4 bottom-4 space-y-3">
+        <button class="bg-blue-800 text-white p-4 rounded-full shadow-lg">?</button>
+        <button class="bg-blue-800 text-white p-4 rounded-full shadow-lg">Chat</button>
+        <button class="bg-blue-800 text-white p-4 rounded-full shadow-lg">Help</button>
+    </div>
+    
+    <!-- Notice Board
+    <div class="fixed right-0 top-1/4 bg-blue-700 text-white text-center py-6 px-4 rounded-l-md"
+        style="height: 600px; padding: 20px;">
+        <span class="block text-xs flex item-center transform rotate-90">NOTICE BOARD</span>
+    </div> -->
+
+    <!-- Script for Sidebar Toggle -->
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleArrow = document.getElementById('toggleArrow');
+
+        // Function to toggle between two states: partially shown and fully shown
+        function toggleSidebar() {
+            if (sidebar.classList.contains('-translate-x-3/4')) {
+                // Show the sidebar fully
+                sidebar.classList.remove('-translate-x-3/4');
+                sidebar.classList.add('translate-x-0');
+                toggleArrow.querySelector('i').classList.replace('fa-arrow-right', 'fa-arrow-left'); // Set to left arrow
+            } else {
+                // Partially hide the sidebar
+                sidebar.classList.remove('translate-x-0');
+                sidebar.classList.add('-translate-x-3/4');
+                toggleArrow.querySelector('i').classList.replace('fa-arrow-left', 'fa-arrow-right'); // Set to right arrow
+            }
+        }
+
+        // Attach event listener to the arrow button
+        toggleArrow.addEventListener('click', toggleSidebar);
+    </script>
+</body>
+
+</html>
